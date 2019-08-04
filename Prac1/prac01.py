@@ -6,7 +6,7 @@ Readjust this Docstring as follows:
 Names: <Blessing Ngorima>
 Student Number: <NGRBLE001>
 Prac: <Prac One>
-Date: <dd/mm/yyyy>
+Date: <04/08/2019>
 """
 
 # import Relevant Librares
@@ -62,11 +62,11 @@ def main():
     #GPIO.add_event_detect(15, GPIO.FALLING, bouncetime=300)
     
     
-    #for j in lst_1:
-     #   GPIO.output(output_pins, j)
-      #  time.sleep(0.5)
-       # GPIO.output(output_pins, j)
-        #time.sleep(0.5)
+     for j in lst_1:
+         GPIO.output(output_pins, j)
+         time.sleep(0.5)
+         GPIO.output(output_pins, j)
+         time.sleep(0.5)
 
     print("write your logic here")
     #p_array = [j]
