@@ -47,7 +47,7 @@ def main():
 
     GPIO.setmode(GPIO.BOARD)
     output_pins = [3,5,7]
-   # input_pins = [13,15]
+    input_pins = [13,15]
     
     GPIO.setup(output_pins, GPIO.OUT)
     GPIO.setup(input_pins, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     
     # Make sure the GPIO is stopped correctly
     GPIO.setmode(GPIO.BOARD)
-    #input_pins = [13,15]
+    input_pins = [13,15]
     #GPIO.setup(input_pins, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
     #GPIO.add_event_detect(13, GPIO.RISING,callback=my_callback1)
     #GPIO.add_event_detect(15, GPIO.FALLING,callback=my_callback2,bouncetime=300)
