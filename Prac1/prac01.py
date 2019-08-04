@@ -15,7 +15,7 @@ import time
 import itertools
 
 # Logic that you write
-"""global lst_1 , index
+global lst_1 , index
 lst_1 = list(itertools.product(range(2), repeat=3))
 index = 0
 
@@ -40,7 +40,7 @@ def my_callback2(channel):
     
     print('This is a edge event callback function two counting down!')
     print(lst_1[index])
-"""
+
 
 def main():
     GPIO.setwarnings(False)
@@ -60,15 +60,9 @@ def main():
         
     #GPIO.add_event_detect(13, GPIO.RISING)
     #GPIO.add_event_detect(15, GPIO.FALLING, bouncetime=300)
-    
-    
-     for j in lst_1:
-         GPIO.output(output_pins, j)
-         time.sleep(0.5)
-         GPIO.output(output_pins, j)
-         time.sleep(0.5)
+  
 
-    print("write your logic here")
+
     #p_array = [j]
     #print(p_array)
     
